@@ -200,7 +200,7 @@ section{
         padding: 0;
     }
     .mobile{
-        display: flex;
+        display: flex !important;
     }
     .pr,.bi{
         margin: 15px;
