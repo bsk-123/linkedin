@@ -73,6 +73,9 @@ nav{
 .grid:hover{
     transform: scale(-0.8,-0.8);
 }
+.bb{
+    display: none !important;
+}
 .si{
     width: 12px;
 }
@@ -200,7 +203,7 @@ section{
         padding: 0;
     }
     .mobile{
-        display: flex !important;
+        display: flex !important; 
     }
     .pr,.bi{
         margin: 15px;
@@ -247,6 +250,14 @@ section{
         position: absolute;
         right: 0;
     }
+    .frnds{
+        display: grid ;
+        grid-template-columns: repeat(4,1fr);
+        
+    }
+    .frnds span{
+        font-size: 15px;
+    }
     .menu{
         display: grid !important;
         grid-template-columns: repeat(5,1fr);
@@ -254,5 +265,11 @@ section{
         position: fixed;
         bottom: 0;
         width: 100%;
+    }
+    hr{
+        margin: 20px 0;
+    }
+    .bb{
+        display: unset !important;
     }
 }
