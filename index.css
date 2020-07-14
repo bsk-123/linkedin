@@ -48,8 +48,8 @@ nav{
     transform: scale(1.5,1.5);
 }
 .pr{
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
     border-radius: 25px;
     cursor: pointer;
 }
@@ -151,7 +151,7 @@ section{
 .see:hover{
     text-decoration: underline;
 }
-.mc{
+.mc,.ham{
     display: none;
 }
 .propic{
@@ -196,7 +196,51 @@ section{
     right: 0px;
     bottom: 0px;
 }
-
+.ham-menu{
+    display: none;
+    position: fixed;
+    top: 60px;
+    z-index: 1;
+    padding: 10px 20px;
+    background: linear-gradient(to bottom,#8fcfd1 20%,white 0%);
+    width: 65%;
+    height: 100%;
+    transform: translateX(-1000px);
+    transition: 0.5s;
+}
+.ham-menu .profile{
+    position: relative;
+    margin-bottom: 10px;
+}
+.ham-menu .night{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ham-menu .down{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.ham-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.ham-menu ul li{
+    margin: 13px 0;
+    cursor: pointer;
+}
+.ham-menu ul li:hover{
+    color: grey;
+}
+.hi{
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+}
+.ham-opt{
+    padding-top: 10px;
+}
 @media screen and (max-width: 900px)
 {
     nav{
@@ -204,6 +248,19 @@ section{
     }
     .mobile{
         display: flex !important; 
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+    .ham-menu{
+        display: inline-block;
+    }
+    .ham{
+        display: inline-block;
+        width: 20px;
+        height: 20px; 
+        margin: 20px 0 0 8px;
+        cursor: pointer;
     }
     .pr,.bi{
         margin: 15px;
