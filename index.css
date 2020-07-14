@@ -207,7 +207,7 @@ section{
 .ham-menu{
     display: none;
     position: fixed;
-    top: 60px;
+    top: 56px;
     z-index: 1;
     padding: 10px 20px;
     background: linear-gradient(to bottom,#8fcfd1 20%,white 0%);
