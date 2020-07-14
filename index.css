@@ -7,13 +7,13 @@ p,h2{
     margin: 0;
     padding: 0;
 }
-.mobile,.menu{
+.mobile{
     display: none !important;
 }
 nav{
-    height: 60px;
+    display: flex;
+    justify-content: center;
     margin: 0;
-    padding: 0 100px 0 140px;
     background-color: #204051;
     color: whitesmoke;
     font-family: sans-serif;
@@ -40,8 +40,10 @@ nav{
     background-color: whitesmoke;
 }
 .bi{
-    width: 25px;
-    margin-bottom: 5px;
+    width: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     cursor: pointer;
 }
 .bi:hover{
@@ -51,15 +53,13 @@ nav{
     height: 40px;
     width: 40px;
     border-radius: 25px;
+    margin: 8px 10px 0 0;
     cursor: pointer;
-}
-.pr:hover{
-    transform: scale(1.5,1.5);
 }
 .bii{
     width: 45px;
     height: 40px;
-    margin-top: 13px;
+    margin-top: 8px;
     float: left;
     cursor: pointer;
 }
@@ -68,6 +68,7 @@ nav{
     height: 20px;
     margin-left: 20px;
     margin-bottom: 3px;
+    margin-top: 8px;
     cursor: pointer;
 }
 .grid:hover{
@@ -81,29 +82,36 @@ nav{
 }
 .options ul{
     list-style: none;
+    margin: 10px 0 0  0;
 }
 .options ul li{
     display: inline-block;
-    margin: 0 30px 0 30px;
+    margin: 0 15px 0 15px;
+}
+.options ul li p{
+    font-size: 15px;
 }
 .search{
     float: right;
     height: 29px;
-    margin: 13px 0 0 5px;
+    margin: 8px 0 0 5px;
     background-color: #eeeeee;
     padding: 10px 8px 0px 8px;
     border-radius: 2px;
 }
 .try{
-    float: right;
+    
     width: 120px;
     margin-left: 15px;
-    margin-top: 15px;
+    margin-top: 8px;
 }
 .try p{
     text-align: center;
     color: goldenrod;
     cursor: pointer;
+}
+.btm{
+    display: none;
 }
 .try p:hover{
     color: yellow;
@@ -164,7 +172,7 @@ section{
 }
 .reactions span
 {
- margin: 0 5px 0 5px;
+ margin: 0;
  cursor: pointer;
  color: #708090;
 }
@@ -257,8 +265,8 @@ section{
     }
     .ham{
         display: inline-block;
-        width: 26px;
-        height: 26px; 
+        width: 20px;
+        height: 20px; 
         margin: 20px 0 0 8px;
         cursor: pointer;
     }
@@ -307,6 +315,13 @@ section{
         position: absolute;
         right: 0;
     }
+    .fr{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20px;
+        height: 20px;
+    }
     .frnds{
         display: grid ;
         grid-template-columns: repeat(4,1fr);
@@ -314,8 +329,9 @@ section{
     }
     .frnds span{
         font-size: 15px;
+        text-align: center;
     }
-    .menu{
+    .btm{
         display: grid !important;
         grid-template-columns: repeat(5,1fr);
         background-color: white;
@@ -327,6 +343,6 @@ section{
         margin: 20px 0;
     }
     .bb{
-        display: unset !important;
+        display: inline !important;
     }
 }
