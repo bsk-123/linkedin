@@ -271,7 +271,7 @@ section{
         cursor: pointer;
     }
     .pr,.bi{
-        margin: 15px;
+        margin: 8px;
     }
     .mr,.follow,.br{
         display: none;
@@ -286,7 +286,7 @@ section{
     }
     .search{
         width: 75%;
-        margin: 13px 20 0 5px;
+        margin: 8px 20px 0 5px;
         background-color: #eeeeee;
         border-radius: 2px;
     }
